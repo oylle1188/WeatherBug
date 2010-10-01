@@ -1,9 +1,6 @@
 ﻿Imports System.Xml
 
 Public Class Main
-    Private Sub StringReader()
-
-    End Sub
     Private Sub btnGetTheWeather_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGetTheWeather.Click
  
         Dim reader As XmlReader = XmlReader.Create(New StringReader(xmlData))
@@ -20,4 +17,7 @@ ByVal name As String _
         End Using
 
     End Function
+
+    <yweather:condition  text="Mostly Cloudy"  code="28"  temp="65"  date="Fri, 01 Oct 2010 3:53 pm EDT" />
+
 End Class
